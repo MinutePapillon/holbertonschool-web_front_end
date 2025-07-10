@@ -1,0 +1,16 @@
+/* Fix issues for dark theme */
+
+/* Footer address in dark sections uses the dynamic text color */
+[data-section-theme="dark"] .footer-address {
+  color: var(--text-color);
+}
+
+/* Social links in dark sections are block-level */
+[data-section-theme="dark"] .social-link {
+  display: block;
+}
+
+/* SVG icons inside social links in dark sections inherit the text color */
+[data-section-theme="dark"] .social-link svg {
+  fill: var(--text-color);
+}
